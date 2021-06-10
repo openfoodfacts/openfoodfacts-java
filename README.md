@@ -1,22 +1,30 @@
-## Micronaut 2.5.5 Documentation
+# Java Wrapper for OpenFoodFacts
 
-- [User Guide](https://docs.micronaut.io/2.5.5/guide/index.html)
-- [API Reference](https://docs.micronaut.io/2.5.5/api/index.html)
-- [Configuration Reference](https://docs.micronaut.io/2.5.5/guide/configurationreference.html)
-- [Micronaut Guides](https://guides.micronaut.io/index.html)
----
+##### Java (Maven) wrapper for https://world.openfoodfacts.org
 
-## Feature mockito documentation
+## Current version 0.9.1
 
-- [https://site.mockito.org](https://site.mockito.org)
+## Usage
 
-## Feature lombok documentation
+Add one dependency to your POM file:
 
-- [Micronaut Project Lombok documentation](https://docs.micronaut.io/latest/guide/index.html#lombok)
+```xml
+<dependencies>
+    <dependency>
+        <groupId>pl.coderion.openfoodfacts</groupId>
+        <artifactId>openfoodfacts</artifactId>
+        <version>0.9.1</version>
+        <classifier>java-wrapper</classifier>
+    </dependency>
+</dependencies>
+```
 
-- [https://projectlombok.org/features/all](https://projectlombok.org/features/all)
+Create product service class and find product by its barcode:
 
-## Feature http-client documentation
+```javascript
+OpenFoodFactsWrapper wrapper = new OpenFoodFactsWrapperImpl();
+ProductResponse productResponse = wrapper.fetchProductByCode("737628064502");
+```
 
-- [Micronaut HTTP Client documentation](https://docs.micronaut.io/latest/guide/index.html#httpClient)
-
+[comment]: <> (## Demo)
+[comment]: <> (Check also [Demo application]&#40;https://github.com/coderion/openfoodfacts-java-wrapper-demo&#41; how to do it)

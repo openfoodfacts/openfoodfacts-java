@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>pl.coderion</groupId>
   <artifactId>openfoodfacts-java-wrapper</artifactId>
-  <version>0.1</version>
+  <version>0.9.1-SNAPSHOT</version>
   <packaging>${packaging}</packaging>
 
   <parent>
