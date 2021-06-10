@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: pl.coderion
+testFramework: junit
+sourceLanguage: java
+buildTool: maven
+features: [annotation-api, app-name, http-client, java, java-application, junit, logback, lombok, maven, mockito, netty-server, readme, shade, yaml]
