@@ -22,6 +22,29 @@
     <micronaut.runtime>netty</micronaut.runtime>
   </properties>
 
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://github.com/openfoodfacts/openfoodfacts-java/blob/main/LICENSE</url>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:git:git@github.com:openfoodfacts/openfoodfacts-java.git</connection>
+    <developerConnection>scm:git:git@github.com:openfoodfacts/openfoodfacts-java.git</developerConnection>
+    <url>git@github.com:openfoodfacts/openfoodfacts-java.git</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <developers>
+    <developer>
+      <name>Krzysztof Kozlowski</name>
+      <email>krzysztof.kozlowski@coderion.pl</email>
+      <organization>Coderion</organization>
+      <organizationUrl>http://www.coderion.pl</organizationUrl>
+    </developer>
+  </developers>
+
   <repositories>
     <repository>
       <id>central</id>
