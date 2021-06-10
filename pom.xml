@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion xmlns="https://maven.apache.org/POM/4.0.0">4.0.0</modelVersion>
-  <groupId xmlns="https://maven.apache.org/POM/4.0.0">pl.coderion</groupId>
-  <artifactId xmlns="https://maven.apache.org/POM/4.0.0">openfoodfacts-java-wrapper</artifactId>
-  <version xmlns="https://maven.apache.org/POM/4.0.0">0.9.2-SNAPSHOT</version>
-  <packaging xmlns="https://maven.apache.org/POM/4.0.0">${packaging}</packaging>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://maven.apache.org/POM/4.0.0">
 
-  <parent xmlns="https://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>pl.coderion</groupId>
+  <artifactId>openfoodfacts-java-wrapper</artifactId>
+  <version>0.9.2-SNAPSHOT</version>
+  <packaging>${packaging}</packaging>
+
+  <parent>
     <groupId>io.micronaut</groupId>
     <artifactId>micronaut-parent</artifactId>
     <version>2.5.5</version>
   </parent>
 
-  <properties xmlns="https://maven.apache.org/POM/4.0.0">
+  <properties>
     <packaging>jar</packaging>
     <jdk.version>11</jdk.version>
     <release.version>11</release.version>
@@ -21,21 +23,21 @@
     <micronaut.runtime>netty</micronaut.runtime>
   </properties>
 
-  <licenses xmlns="https://maven.apache.org/POM/4.0.0">
+  <licenses>
     <license>
       <name>MIT License</name>
       <url>https://github.com/openfoodfacts/openfoodfacts-java/blob/main/LICENSE</url>
     </license>
   </licenses>
 
-  <scm xmlns="https://maven.apache.org/POM/4.0.0">
+  <scm>
     <connection>scm:git:git@github.com:openfoodfacts/openfoodfacts-java.git</connection>
     <developerConnection>scm:git:git@github.com:openfoodfacts/openfoodfacts-java.git</developerConnection>
     <url>git@github.com:openfoodfacts/openfoodfacts-java.git</url>
     <tag>HEAD</tag>
   </scm>
 
-  <developers xmlns="https://maven.apache.org/POM/4.0.0">
+  <developers>
     <developer>
       <name>Krzysztof Kozlowski</name>
       <email>krzysztof.kozlowski@coderion.pl</email>
@@ -44,14 +46,14 @@
     </developer>
   </developers>
 
-  <repositories xmlns="https://maven.apache.org/POM/4.0.0">
+  <repositories>
     <repository>
       <id>central</id>
       <url>https://repo.maven.apache.org/maven2</url>
     </repository>
   </repositories>
 
-  <dependencies xmlns="https://maven.apache.org/POM/4.0.0">
+  <dependencies>
     <dependency>
       <groupId>io.micronaut</groupId>
       <artifactId>micronaut-inject</artifactId>
@@ -120,7 +122,7 @@
     </dependency>
   </dependencies>
 
-  <build xmlns="https://maven.apache.org/POM/4.0.0">
+  <build>
     <plugins>
       <plugin>
         <groupId>io.micronaut.build</groupId>
