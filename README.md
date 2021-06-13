@@ -18,7 +18,7 @@ Add one dependency to your POM file:
 </dependencies>
 ```
 
-Create product service class and find product by its barcode:
+Create wrapper object and find product by its barcode:
 
 ```javascript
 OpenFoodFactsWrapper wrapper = new OpenFoodFactsWrapperImpl();
