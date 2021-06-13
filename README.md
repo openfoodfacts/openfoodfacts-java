@@ -2,7 +2,7 @@
 
 ##### Java (Maven) wrapper for https://world.openfoodfacts.org
 
-## Current version 0.9.1
+## Current version 0.9.3
 
 ## Usage
 
@@ -11,10 +11,9 @@ Add one dependency to your POM file:
 ```xml
 <dependencies>
     <dependency>
-        <groupId>pl.coderion.openfoodfacts</groupId>
-        <artifactId>openfoodfacts</artifactId>
-        <version>0.9.1</version>
-        <classifier>java-wrapper</classifier>
+        <groupId>pl.coderion</groupId>
+        <artifactId>openfoodfacts-java-wrapper</artifactId>
+        <version>0.9.3</version>
     </dependency>
 </dependencies>
 ```
@@ -26,5 +25,5 @@ OpenFoodFactsWrapper wrapper = new OpenFoodFactsWrapperImpl();
 ProductResponse productResponse = wrapper.fetchProductByCode("737628064502");
 ```
 
-[comment]: <> (## Demo)
-[comment]: <> (Check also [Demo application]&#40;https://github.com/coderion/openfoodfacts-java-wrapper-demo&#41; how to do it)
+## Demo
+Check also [Demo application](https://github.com/openfoodfacts/openfoodfacts-java-demo) how to do it.
