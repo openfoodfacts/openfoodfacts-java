@@ -27,3 +27,9 @@ ProductResponse productResponse = wrapper.fetchProductByCode("737628064502");
 
 ## Demo
 Check also [Demo application](https://github.com/openfoodfacts/openfoodfacts-java-demo) how to do it.
+
+
+## Third party applications
+Feel free to open a PR to add your application in this list.
+
+## Authors
