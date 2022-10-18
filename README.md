@@ -1,12 +1,14 @@
 # Java Wrapper for OpenFoodFacts
 
-##### Java (Maven) wrapper for https://world.openfoodfacts.org
+![Github Repo Size](https://img.shields.io/github/repo-size/openfoodfacts/openfoodfacts-java?style=for-the-badge&color=aqua)
 
-## Current version 0.9.3
+|||
+|--|--|
+|Java (Maven) wrapper for [Open Food Facts](https://world.openfoodfacts.org)|Current version 0.9.3 |
 
-## Usage
+<details><summary><h2>Usage</h2></summary>
 
-Add one dependency to your POM file:
+- Add one dependency to your POM file:
 
 ```xml
 <dependencies>
@@ -18,18 +20,25 @@ Add one dependency to your POM file:
 </dependencies>
 ```
 
-Create wrapper object and find product by its barcode:
+- Create wrapper object and find product by its barcode:
 
 ```javascript
 OpenFoodFactsWrapper wrapper = new OpenFoodFactsWrapperImpl();
 ProductResponse productResponse = wrapper.fetchProductByCode("737628064502");
 ```
+</details>
+
+<br>
 
 ## Demo
-Check also [Demo application](https://github.com/openfoodfacts/openfoodfacts-java-demo) how to do it.
+Check also [Demo application](https://github.com/openfoodfacts/openfoodfacts-java-demo) about how to do it.
 
 
 ## Third party applications
 Feel free to open a PR to add your application in this list.
 
-## Authors
+## Contributors
+
+<a href="https://github.com/openfoodfacts/openfoodfacts-java/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=openfoodfacts/openfoodfacts-java" />
+</a>
