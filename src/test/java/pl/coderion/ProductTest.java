@@ -8,12 +8,12 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 
 import java.util.Map;
 
-public class ProductTest {
+class ProductTest {
 
     private final ObjectMapper mapper = new ObjectMapper();
 
     @Test
-    public void testOwnerDeserialization() throws Exception {
+    void testOwnerDeserialization() throws Exception {
         // 1. Create a "fake" JSON string like the API returns
         String json = "{\"owner\": \"Ferrero\"}";
 
@@ -25,7 +25,7 @@ public class ProductTest {
     }
 
     @Test
-    public void testOwnerFieldsDeserialization() throws Exception {
+    void testOwnerFieldsDeserialization() throws Exception {
         // 1. JSON with a nested object for owner_fields
         String json = "{" +
                     "\"owner\": \"Ferrero\"," +
@@ -44,7 +44,7 @@ public class ProductTest {
     }
 
     @Test
-    public void testOwnersTags() throws Exception {
+    void testOwnersTags() throws Exception {
         // Note: No square brackets here, just like the raw data
         String json = "{\"owners_tags\": \"org-ferrero-france-commerciale\"}";
 
@@ -54,7 +54,7 @@ public class ProductTest {
     }
 
     @Test
-    public void testFullOwnershipMapping() throws Exception {
+    void testFullOwnershipMapping() throws Exception {
         String json = "{" +
                     "\"owner\": \"Ferrero\"," +
                     "\"owner_fields\": {\"1\": 1724673898}," +
@@ -72,7 +72,7 @@ public class ProductTest {
     }
 
     @Test
-    public void testPartialOwnershipMapping() throws Exception {
+    void testPartialOwnershipMapping() throws Exception {
         // Only 'owner' is present here
         String json = "{\"owner\": \"Nestle\"}";
 
@@ -84,7 +84,7 @@ public class ProductTest {
     }
 
     @Test
-    public void testOwnerFieldsVersatility() throws Exception {
+    void testOwnerFieldsVersatility() throws Exception {
         String json = "{\"owner_fields\": {\"version\": \"v2\", \"count\": 42, \"active\": true}}";
 
         Product product = mapper.readValue(json, Product.class);

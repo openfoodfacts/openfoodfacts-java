@@ -6,6 +6,9 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import lombok.Data;
 
+/**
+ * Data model representing a product in the Open Food Facts database.
+ */
 @Data
 public class Product {
 
