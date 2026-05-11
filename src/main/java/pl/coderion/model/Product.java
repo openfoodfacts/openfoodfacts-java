@@ -458,6 +458,18 @@ public class Product {
     @JsonProperty("other_nutritional_substances_tags")
     private String[] otherNutritionalSubstancesTags;
 
+    @JsonProperty("owner")
+    private String owner;
+
+    @JsonProperty("owner_fields")
+    private Map<String, Object> ownerFields;
+
+    @JsonProperty("owner_imported")
+    private String ownerImported;
+
+    @JsonProperty("owners_tags")
+    private String ownersTags;
+
     private String packaging;
 
     @JsonProperty("packaging_debug_tags")
