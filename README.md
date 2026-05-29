@@ -1,6 +1,7 @@
 # Java Wrapper for OpenFoodFacts
 
 ##### Java (Maven) wrapper for https://world.openfoodfacts.org
+Based on https://openfoodfacts.github.io/documentation/docs/Product-Opener/api/
 
 ## Current version 0.9.3
 
