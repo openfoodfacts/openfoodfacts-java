@@ -6,6 +6,7 @@ on:
       - opened
       - labeled
       - transferred
+permissions: {}
 jobs:
   add-to-project:
     name: 🎨 Add issue to the projects
