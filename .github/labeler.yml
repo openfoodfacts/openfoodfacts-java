@@ -1,0 +1,24 @@
+java:
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'src/**/*.java'
+          - 'src/main/resources/**'
+
+dependencies:
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'pom.xml'
+          - 'mvnw'
+          - 'mvnw.bat'
+          - '.mvn/**'
+
+github_actions:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '.github/**'
+
+"📚 documentation":
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/*.md'
+          - 'LICENSE'
